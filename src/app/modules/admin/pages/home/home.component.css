@@ -1,0 +1,19 @@
+/* circle on hover converts to rectangle */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid black;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.65, 0.0, 0.35, 1);
+  display: inline-block;
+  align-self: center;
+}
+
+/* circle on hover */
+.circle:hover {
+  border-radius: 0;
+  height: 80px;
+}
