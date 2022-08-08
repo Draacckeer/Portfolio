@@ -17,3 +17,22 @@
   border-radius: 0;
   height: 80px;
 }
+
+/* slide in left animation */
+.slide-in-left {
+  transform: translateX(-100px);
+  animation: slide-in-left-animation 0.75s ease both;
+  animation-duration: 0.75s;
+}
+/* keyframes */
+@keyframes slide-in-left-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
